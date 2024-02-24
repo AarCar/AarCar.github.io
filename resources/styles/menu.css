@@ -1,0 +1,175 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecera__contenedor {
+    width: 100%;
+}
+
+.imagen__cabecera {
+    width: 100%;
+}
+
+.titulo__contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 6em;
+    color: var(--primary50);
+}
+
+.subtitulo {
+    font-size: 3em;
+}
+
+.menu__contenedor {
+    margin: 40px;
+    width: 100%;
+    height: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/imgMenu/fondoMenu.png);
+}
+
+.menu__contenedorFilas {
+    display: flex;
+    margin: 80px;
+}
+
+.columna__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__imagenes {
+    margin: 50px;
+    width: 350px;
+    border-radius: 50em;
+}
+
+.columna__menu .opciones {
+    font-size: 2em;
+    color: var(--primary50);
+    margin: 20px;
+}
+
+.opciones li {
+    margin: 40px;
+}
+
+.opcion__pizzaMargarita,
+.opcion__pizzaPepperoni,
+.opcion__pizzaHawaiiana,
+.opcion__pizzaVegetariana,
+.opcion__lasañaClasica,
+.opcion__lasañaVegetariana,
+.opcion__lasañaPolloAlfredo,
+.opcion__lasañaEspinacasChampinones,
+.opcion__pastaCarbonara,
+.opcion__pastaFettuccineAlfredo,
+.opcion__Arrabiata,
+.opcion__pastaLinguinePesto {
+    position: relative;
+
+}
+
+.pizzaMargarita,
+.pizzaPepperoni,
+.pizzaHawaiiana,
+.pizzaVegetariana,
+.lasañaClasica,
+.lasañaVegetariana,
+.lasañaPolloAlfredo,
+.lasañaEspinacasChampinones,
+.pastaCarbonara,
+.pastaFettuccineAlfredo,
+.pastaArrabiata,
+.pastaLinguinePesto {
+    z-index: -1;
+}
+
+.opcion__pizzaMargarita .pizzaMargarita,
+.opcion__pizzaPepperoni .pizzaPepperoni,
+.opcion__pizzaHawaiiana .pizzaHawaiiana,
+.opcion__pizzaVegetariana .pizzaVegetariana,
+.opcion__lasañaClasica .lasañaClasica,
+.opcion__lasañaVegetariana .lasañaVegetariana,
+.opcion__lasañaPolloAlfredo .lasañaPolloAlfredo,
+.opcion__lasañaEspinacasChampinones .lasañaEspinacasChampinones,
+.opcion__pastaCarbonara .pastaCarbonara,
+.opcion__pastaFettuccineAlfredo .pastaFettuccineAlfredo,
+.opcion__Arrabiata .pastaArrabiata,
+.opcion__pastaLinguinePesto .pastaLinguinePesto
+ {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.opcion__pizzaMargarita .margarita:hover+.pizzaMargarita,
+.opcion__pizzaPepperoni .pepperoni:hover+.pizzaPepperoni,
+.opcion__pizzaHawaiiana .hawaiiana:hover+.pizzaHawaiiana,
+.opcion__pizzaVegetariana .vegetarianap:hover+.pizzaVegetariana,
+.opcion__lasañaClasica .clasica:hover+.lasañaClasica,
+.opcion__lasañaVegetariana .vegetarianal:hover+.lasañaVegetariana,
+.opcion__lasañaPolloAlfredo .polloAlfredo:hover+.lasañaPolloAlfredo,
+.opcion__lasañaEspinacasChampinones .espinacasChampinones:hover+.lasañaEspinacasChampinones,
+.opcion__pastaCarbonara .carbonara:hover+.pastaCarbonara,
+.opcion__pastaFettuccineAlfredo .fettuccineAlfredo:hover+.pastaFettuccineAlfredo,
+.opcion__Arrabiata .Arrabiata:hover+.pastaArrabiata,
+.opcion__pastaLinguinePesto .linguinePesto:hover+.pastaLinguinePesto {
+    display: block;
+}
+
+
+
+
+
+@media (max-width: 1500px) {
+
+    .cabecera__contenedor {
+        margin-top: 150px;
+    }
+
+    .titulo__contenedor {
+        align-items: center;
+    }
+
+    .titulo {
+        font-size: 2em;
+    }
+
+    .subtitulo {
+        font-size: 1.5em;
+    }
+
+    .menu__imagenes {
+        width: 200px;
+    }
+
+    .menu__footerImagen {
+        width: 200px;
+    }
+
+    .menu__contenedor {
+        height: 100%;
+    }
+
+    .menu__contenedorFilas {
+        flex-direction: column;
+    }
+
+    .columna__menu .opciones {
+        font-size: 1em;
+        text-align: center;
+    }
+}

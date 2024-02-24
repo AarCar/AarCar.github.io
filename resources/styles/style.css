@@ -1,0 +1,333 @@
+:root {
+    --primary50: #F4EEE0;
+    --primary100: #6D5D6E;
+    --primary200: #4F4557;
+    --primary300: #393646;
+    --secundary50: #fdcc80;
+    --secundary100: #fcc267;
+    --secundary200: #fcb84e;
+    --secundary300: #fbae34;
+    --fontPrimary: "Poppins", sans-serif;
+    --fontSecundary: "Inter", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: var(--primary100);
+}
+
+.poppins-light {
+    font-family: var(--fontPrimary);
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: var(--fontPrimary);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: var(--fontPrimary);
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: var(--fontPrimary);
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: var(--fontPrimary);
+    font-weight: 900;
+    font-style: normal;
+}
+
+.poppins-light-italic {
+    font-family: var(--fontPrimary);
+    font-weight: 300;
+    font-style: italic;
+}
+
+.poppins-regular-italic {
+    font-family: var(--fontPrimary);
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-semibold-italic {
+    font-family: var(--fontPrimary);
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: var(--fontPrimary);
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppins-black-italic {
+    font-family: var(--fontPrimary);
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+.inter-light {
+    font-family: var(--fontSecundary);
+    font-weight: 300;
+    font-style: normal;
+}
+
+.inter-regular {
+    font-family: var(--fontSecundary);
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.inter-semibold {
+    font-family: var(--fontSecundary);
+    font-weight: 600;
+    font-style: normal;
+}
+
+.inter-bold {
+    font-family: var(--fontSecundary);
+    font-weight: 700;
+    font-style: normal;
+}
+
+.inter-black {
+    font-family: var(--fontSecundary);
+    font-weight: 900;
+    font-style: normal;
+}
+
+.inter-light-italic {
+    font-family: var(--fontSecundary);
+    font-weight: 300;
+    font-style: italic;
+}
+
+.inter-regular-italic {
+    font-family: var(--fontSecundary);
+    font-weight: 400;
+    font-style: italic;
+}
+
+.inter-semibold-italic {
+    font-family: var(--fontSecundary);
+    font-weight: 600;
+    font-style: italic;
+}
+
+.inter-bold-italic {
+    font-family: var(--fontSecundary);
+    font-weight: 700;
+    font-style: italic;
+}
+
+.inter-black-italic {
+    font-family: var(--fontSecundary);
+    font-weight: 900;
+    font-style: italic;
+}
+
+.ingrid-darling-regular {
+    font-family: "Ingrid Darling";
+    font-weight: 400;
+    font-style: normal;
+    color: var(--secundary300);
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--primary50);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 100%;
+    height: 18em;
+    background-color: var(--primary300);
+    align-items: center;
+}
+
+.header__logo {
+    width: 15em;
+    margin-top: 2em;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    height: 30em;
+    gap: 3em;
+    background-color: var(--primary200);
+}
+
+.header__nav a:hover{
+    border-bottom: 1px solid var(--primary50);
+}
+
+.footer {
+    min-width: 100%;
+    height: 15em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--fontSecundary);
+    color: var(--primary50);
+    background-color: var(--primary300);
+}
+
+.gif__contenedor {
+    position: relative;
+}
+
+.gif__imagen {
+    width: 100%;
+    filter: blur(5px);
+}
+
+.gif__texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    text-align: center;
+    color: var(--primary50);
+    text-shadow: var(--primary300) 0.2em 0.2em 0.2em
+}
+
+.boton__principal {
+    transform: translateX(-50%);
+    background-color: var(--secundary200);
+    font-size: 1.5em;
+    color: var(--primary300);
+    padding: 20px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.gif__boton {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--secundary200);
+    font-size: 1.5em;
+    color: var(--primary300);
+    padding: 20px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.article {
+    margin: 40px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.article__texto {
+    width: 20%;
+    margin: 80px;
+    font-size: 1.5em;
+    text-align: center;
+    color: var(--primary50);
+    text-shadow: var(--primary300) 0.2em 0.2em 0.2em
+}
+
+.article__titulo {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.article__img {
+    width: 600px;
+    height: 450px;
+    border-radius: 2em;
+}
+
+.video__contenedor {
+    display: flex;
+    margin: 40px 0px;
+    justify-content: center;
+
+}
+
+.video {
+    border-radius: 2em;
+}
+
+@media (max-width: 756px) {
+    .header__nav {
+        flex-direction: column;
+        height: 30em;
+        gap: 1.5em;
+    }
+
+    .footer {
+        flex-direction: column;
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 1500px) {
+
+    .gif__contenedor {
+        margin-top: 150px;
+    }
+
+    .gif__texto {
+        font-size: 0.5em;
+    }
+
+    .gif__boton {
+        margin-top: 18px;
+        padding: 0;
+        font-size: 0.5em;
+    }
+
+    .article {
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+    }
+
+    .article__img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .article__texto {
+        width: 50%;
+        font-size: 0.5em;
+        margin: 10px;
+    }
+
+    .video {
+        width: 300px;
+        height: 200px;
+    }
+
+
+}

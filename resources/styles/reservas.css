@@ -1,0 +1,249 @@
+input::placeholder,
+select::placeholder {
+    color: black;
+}
+
+input,
+select {
+    width: 18em;
+    height: 3em;
+    border-radius: 1em;
+    border: 1px solid black;
+    padding: 0 1em;
+}
+
+.cabecera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    height: 20em;
+}
+
+.cabecera__titulo {
+    color: var(--primary50);
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.cabecera__descripcion {
+    border-bottom: 1px solid black;
+    padding-bottom: .4em;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+
+
+.contenedorReservas,
+.ayuda__contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    padding: 4em 0;
+    background: rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.contenedorReservas {
+    flex-direction: column;
+}
+
+
+.formulario__seccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+
+}
+
+.formulario__seccion {
+    color: var(--secundary200);
+}
+
+.formulario__seccion span {
+    color: var(--secundary200);
+}
+
+.formulario__seccion .material-symbols-outlined,
+span {
+    vertical-align: middle;
+}
+
+.formulario__seccion .material-symbols-outlined {
+    color: var(--primary50);
+    margin: 0 .6em;
+}
+
+.formulario__boton {
+    background-color: var(--secundary200);
+    font-size: 1.5em;
+    color: var(--primary300);
+    padding: 15px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.reservas__imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+
+.imagenes__reservas {
+    width: 15em;
+    height: 15em;
+    object-fit: cover;
+    margin: 2em;
+}
+
+
+.ayuda__contenedor {
+    flex-direction: column;
+    gap: 1em;
+}
+
+.ayuda__columna--left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+
+.ayuda__columna--right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ayuda__titulo {
+    font-size: 2em;
+    color: var(--primary50);
+}
+
+.ayuda__descripcion
+{
+    font-size: 1.5em;
+}
+
+.imagenAyuda {
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.seccion__titulo {
+    color: var(--secundary300);
+    font-size: 1.5em;
+}
+
+.seccion__descripcion {
+    color: white;
+    font-size: 0.9em;
+}
+
+.ayuda__subtitulo{
+    color: var(--primary50);
+    font-size: 1.5em;
+}
+
+@media (min-width: 768px) {
+    .table {
+        display: table;
+        width: 40em;
+        border-collapse: separate;
+        border-spacing: 1em;
+    }
+
+    .tr {
+        display: table-row;
+        row-gap: 5em;
+    }
+
+    .td {
+        display: table-cell;
+        height: 5em;
+        padding: 5px;
+        vertical-align: middle;
+    }
+
+
+    .reservas__imagenes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5em;
+    }
+
+    .imagenes__reservas{
+
+    }
+
+
+
+    .imagenAyuda {
+        width: 17em;
+        height: 17em;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .ayuda__contenedor {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        min-width: 100%;
+        height: 30em;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    .cabecera__titulo {
+        font-size: 4em;
+    }
+
+    .cabecera__descripcion,
+    .ayuda__descripcion {
+        font-size: 2em;
+    }
+
+    .ayuda__titulo {
+        font-size: 4em;
+        color: var(--primary50);
+    }
+
+    .seccion__titulo {
+        color: var(--secundary300);
+        font-size: 3em;
+    }
+
+    .seccion__descripcion {
+        font-size: 1.75em;
+    }
+
+
+    .imagenes__reservas {
+        width: 25em;
+        height: 25em;
+        object-fit: cover;
+    }
+
+    .imagenAyuda {
+        width: 20em;
+        height: 20em;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+
+}

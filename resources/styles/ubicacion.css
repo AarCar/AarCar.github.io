@@ -1,0 +1,187 @@
+.cabecera {
+    display: flex;
+    min-width: 100%;
+    height: 25em;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/headerubicacion.jpg);
+    background-size: cover;
+    background-position: 5px;
+}
+
+.cabecera__titulo {
+    color: var(--primary50);
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.ubicacion__mapa{
+    width: 100%;
+    height: 20em;
+}
+
+.contenedor__ubicacion{
+    gap: 1em;
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    background: rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.enlace__imagenReserva {
+    max-width: min-content;
+}
+
+.imagenReserva {
+    width: 10em;
+}
+
+
+.informacion__titulo,
+.horario__titulo {
+    color: var(--primary50);
+    font-size: 2em;
+}
+
+.seccion__titulo {
+    color: var(--secundary300);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.seccion__descripcion {
+    color: white;
+    font-size: 0.9em;
+}
+
+.horario, .informacion{
+    margin-bottom: 1em;
+}
+
+.horario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    background: rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.contenedor__secciones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4em;
+    row-gap: 4em;
+}
+
+.horario__secciones,
+.informacion__secciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.horario__secciones__especial {
+    width: 15em;
+    margin: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion_titulo_especial {
+    color: var(--primary50);
+    font-size: 1.75em;
+    text-align: center;
+    max-width: 10em;
+}
+
+.seccion__descuento {
+    color: #FF0000;
+    font-size: 1.5em;
+    font-family: var(--fontSecundary);
+    font-weight: bold;
+}
+
+.imagen__garfieldGlobo {
+    width: 10em;
+    animation: animacion__garfieldGlobo 3s ease-in-out infinite;
+    margin-bottom: 5em;
+}
+
+.contenedor__secciones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4em;
+    row-gap: 4em;
+}
+
+@keyframes animacion__garfieldGlobo {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: rotate(10deg) translate(0, 10px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+@media (min-width: 1000px) {
+    .contenedor__ubicacion {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 1em;
+    }
+
+    .cabecera__titulo {
+        font-size: 4em;
+    }
+    .ubicacion__mapa{
+        height: 40em;
+    }
+
+    .informacion__titulo,
+    .horario__titulo {
+        font-size: 4em;
+    }
+
+    .seccion__titulo {
+        font-size: 3em;
+    }
+
+    .seccion_titulo_especial {
+        font-size: 3.5em;
+    }
+
+    .seccion__descuento {
+        font-size: 3em;
+    }
+
+    .horario__secciones__especial {
+        width: 30em;
+    }
+
+    .seccion__descripcion {
+        font-size: 1.75em;
+    }
+
+    .enlace__imagenReserva {
+        margin-top: 10%;
+    }
+
+    .imagenReserva {
+        width: 25em;
+    }
+    .imagen__garfieldGlobo{
+        width: 20em;
+    }
+}

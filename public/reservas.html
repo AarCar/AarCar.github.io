@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&display=swap&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="../resources/styles/normalize.css">
+    <link rel="stylesheet" href="../resources/styles/reservas.css">
+    <link rel="stylesheet" href="../resources/styles/style.css">
+    <title>Reservas | Garfield Diner</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="../resources/images/logo.png" alt="Logo" class="header__logo">
+        <nav class="header__nav">
+            <a href="../index.html" class="poppins-bold">Inicio</a>
+            <a href="./menu.html" class="poppins-bold">Menu</a>
+            <a href="./reservas.html" class="poppins-bold">Reservas</a>
+            <a href="./galeria.html" class="poppins-bold">Galeria</a>
+            <a href="./ubicacion.html" class="poppins-bold">Ubicación</a>
+        </nav>
+    </header>
+    <main>
+        <div class="cabecera">
+            <h1 class="cabecera__titulo poppins-bold">Reservas</h1>
+            <p class="ingrid-darling-regular cabecera__descripcion">Reserva tu mesa ahora</p>
+        </div>
+        <form action="#" class="contenedorReservas">
+            <div class="table">
+                <div class="tr">
+                    <div class="td">
+                        <div class="formulario__seccion">
+                            <label for="nombre" class="inter-bold">
+                                <span class="material-symbols-outlined">
+                                    account_circle
+                                </span>
+                                Nombre</label>
+                            <input type="text" name="nombreUsuario" id="nombre" autocomplete="name" required placeholder="Escriba su nombre" autofocus>
+                        </div>
+                    </div>
+                    <div class="td">
+                        <div class="formulario__seccion">
+                            <label for="numeroPersonas" class="inter-bold"><span class="material-symbols-outlined">
+                                    person_add
+                                </span>Numero Personas</label>
+                            <input type="number" name="numeroPersonasUsuario" id="numeroPersonas" value="1" max="15"
+                                required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tr">
+                    <div class="td">
+                        <div class="formulario__seccion">
+                            <label for="telefono" class="inter-bold"><span class="material-symbols-outlined">
+                                    call
+                                </span>Telefono</label>
+                            <input type="tel" name="telefonoUsuario" id="telefono" autocomplete="tel" placeholder="Escriba su telefono" required>
+                        </div>
+                    </div>
+                    <div class="td">
+                        <div class="formulario__seccion">
+                            <label for="hora" class="inter-bold"><span class="material-symbols-outlined">
+                                    schedule
+                                </span>Hora</label>
+                            <select name="horaUsuario" id="hora" required>
+                                <option value="" selected>Seleccione una hora</option>
+                                <option value="13:00">13:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:30">22:30</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="tr">
+                    <div class="td">
+                        <div class="formulario__seccion">
+                            <label for="email" class="inter-bold"><span class="material-symbols-outlined">
+                                    mail
+                                </span>Email</label>
+                            <input type="email" name="emailUsuario" id="email" autocomplete="email" placeholder="Escriba su email" required>
+                        </div>
+                    </div>
+                    <div class="td">
+                        <div class="formulario__seccion">
+                            <label for="fecha" class="inter-bold"><span class="material-symbols-outlined">
+                                    calendar_month
+                                </span>Fecha</label>
+                            <input type="date" name="fechaUsuario" id="fecha" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="formulario__boton">Reservar Ahora</button>
+        </form>
+        <div class="reservas__imagenes">
+            <img src="../resources/images/reservaimg1.jpg" alt="imagenreservas1" class="imagenes__reservas">
+            <img src="../resources/images/reservaimg2.jpg" alt="imagenreservas2" class="imagenes__reservas">
+        </div>
+        <div class="ayuda__contenedor">
+            <div class="ayuda__columna--left">
+                <h2 class="poppins-bold ayuda__titulo">AYUDA</h2>
+                <p class="ingrid-darling-regular ayuda__descripcion">¿Tienes algun problema?</p>
+                <h4 class="ayuda__subtitulo">Contactanos a traves de:</h4>
+                <div class="ayuda__seccion">
+                    <h4 class="seccion__titulo">Teléfono</h4>
+                    <p class="seccion__descripcion">611 123 456</p>
+                </div>
+                <div class="ayuda__seccion">
+                    <h4 class="seccion__titulo">Correo</h4>
+                    <p class="seccion__descripcion">garfielddiner@gmai.com</p>
+                </div>
+            </div>
+            <div class="ayuda__columna--right">
+                <img class="imagenAyuda" src="../resources/images/fotoreservaayuda.jpg" alt="foto persona contestando telefono">
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__iconos">
+            <p>REDES SOCIALES</p>
+            <img src="../resources/images/facebookIcono.png" alt="socialIcono" class="facebook__Icono">
+            <img src="../resources/images/twitterIcono.png" alt="socialIcono" class="twitter__Icono">
+            <img src="../resources/images/instagramIcono.png" alt="socialIcono" class="instagram__Icono">
+        </div>
+        <div class="footer__copyright">
+            <p>Copyright ©2024 All rights reserved</p>
+        </div>
+        <div class="footer__logo">
+            <img src="../resources/images/logoFooter.png" alt="logoFooter" class="footer__logo">
+        </div>
+    </footer>
+</body>
+
+</html>

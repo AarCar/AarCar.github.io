@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&display=swap&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../resources/styles/normalize.css">
+    <link rel="stylesheet" href="../resources/styles/style.css">
+    <link rel="stylesheet" href="../resources/styles/ubicacion.css">
+    <title>Ubicacion | Garfield Diner</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="../resources/images/logo.png" alt="Logo" class="header__logo">
+        <nav class="header__nav">
+            <a href="../index.html" class="poppins-bold">Inicio</a>
+            <a href="./menu.html" class="poppins-bold">Menu</a>
+            <a href="./reservas.html" class="poppins-bold">Reservas</a>
+            <a href="./galeria.html" class="poppins-bold">Galeria</a>
+            <a href="./ubicacion.html" class="poppins-bold">Ubicación</a>
+        </nav>
+    </header>
+    <main>
+        <div class="cabecera">
+            <h1 class="cabecera__titulo poppins-bold">Ubicación</h1>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d985.433419284979!2d-0.45191298774907446!3d38.35925425146975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd62377fa32f663d%3A0xc35c2cb98bd97cc9!2sC.%20Sol%20Naciente%2C%2003016%20Alicante%20(Alacant)%2C%20Alicante!5e0!3m2!1ses!2ses!4v1708598603424!5m2!1ses!2ses"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            class="ubicacion__mapa">
+        </iframe>
+
+        <div class="contenedor__ubicacion">
+            <div class="informacion">
+                <h3 class="informacion__titulo">Información</h3>
+                <div class="informacion__seccion">
+                    <h4 class="seccion__titulo">Dirección</h4>
+                    <p class="seccion__descripcion">C. Sol Naciente, 03016, Alicante</p>
+                </div>
+                <div class="informacion__seccion">
+                    <h4 class="seccion__titulo">Teléfono</h4>
+                    <p class="seccion__descripcion">611 123 456</p>
+                </div>
+                <div class="informacion__seccion">
+                    <h4 class="seccion__titulo">Email</h4>
+                    <p class="seccion__descripcion">garfielddiner@gmai.com</p>
+                </div>
+                <a href="./reservas.html" class="enlace__imagenReserva">
+                    <img src="../resources/images/imagenReserva.png" alt="imagenReserva" class="imagenReserva">
+                </a>
+            </div>
+            <div class="horario">
+                <h3 class="horario__titulo">Horario</h3>
+                <div class="contenedor__secciones">
+                    <div class="horario__secciones">
+                        <h4 class="seccion__titulo">Lunes</h4>
+                        <p class="seccion__descripcion">13:00-16:00</p>
+                        <p class="seccion__descripcion">19:30-23:30</p>
+                    </div>
+                    <div class="horario__secciones">
+                        <h4 class="seccion__titulo">Martes</h4>
+                        <p class="seccion__descripcion">13:00-16:00</p>
+                        <p class="seccion__descripcion">19:30-23:30</p>
+                    </div>
+                    <div class="horario__secciones">
+                        <h4 class="seccion__titulo">Miercoles</h4>
+                        <p class="seccion__descripcion">13:00-16:00</p>
+                        <p class="seccion__descripcion">19:30-23:30</p>
+                    </div>
+                    <div class="horario__secciones">
+                        <h4 class="seccion__titulo">Jueves</h4>
+                        <p class="seccion__descripcion">13:00-16:00</p>
+                        <p class="seccion__descripcion">19:30-23:30</p>
+                    </div>
+                    <div class="horario__secciones">
+                        <h4 class="seccion__titulo">Viernes</h4>
+                        <p class="seccion__descripcion">13:00-16:00</p>
+                        <p class="seccion__descripcion">19:30-23:30</p>
+                    </div>
+                    <div class="horario__secciones">
+                        <h4 class="seccion__titulo">Sabado</h4>
+                        <p class="seccion__descripcion">13:00-16:00</p>
+                        <p class="seccion__descripcion">19:30-23:30</p>
+                    </div>
+                </div>
+                <div class="horario__secciones horario__secciones__especial">
+                    <h4 class="seccion__titulo seccion_titulo_especial">Especial Domingo</h4>
+                    <p class="seccion__descuento">Precios 50%</p>
+                    <p class="seccion__descripcion">13:00-16:00</p>
+                    <p class="seccion__descripcion">19:30-23:30</p>
+                </div>
+                <img src="../resources/images/garieldglobo.png" alt="garfieldglobo" class="imagen__garfieldGlobo">
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__iconos">
+            <p>REDES SOCIALES</p>
+            <img src="../resources/images/facebookIcono.png" alt="socialIcono" class="facebook__Icono">
+            <img src="../resources/images/twitterIcono.png" alt="socialIcono" class="twitter__Icono">
+            <img src="../resources/images/instagramIcono.png" alt="socialIcono" class="instagram__Icono">
+        </div>
+        <div class="footer__copyright">
+            <p>Copyright ©2024 All rights reserved</p>
+        </div>
+        <div class="footer__logo">
+            <img src="../resources/images/logoFooter.png" alt="logoFooter" class="footer__logo">
+        </div>
+    </footer>
+</body>
+
+</html>
