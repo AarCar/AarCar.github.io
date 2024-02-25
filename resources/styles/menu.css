@@ -34,7 +34,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../img/imgMenu/fondoMenu.png);
+    background-image: url(../images/imgMenu/fondoMenu.png);
 }
 
 .menu__contenedorFilas {
@@ -106,8 +106,7 @@ main {
 .opcion__pastaCarbonara .pastaCarbonara,
 .opcion__pastaFettuccineAlfredo .pastaFettuccineAlfredo,
 .opcion__Arrabiata .pastaArrabiata,
-.opcion__pastaLinguinePesto .pastaLinguinePesto
- {
+.opcion__pastaLinguinePesto .pastaLinguinePesto {
     display: none;
     position: absolute;
     top: 100%;
@@ -171,5 +170,20 @@ main {
     .columna__menu .opciones {
         font-size: 1em;
         text-align: center;
+    }
+
+    .opcion__pizzaMargarita .pizzaMargarita,
+    .opcion__pizzaPepperoni .pizzaPepperoni,
+    .opcion__pizzaHawaiiana .pizzaHawaiiana,
+    .opcion__pizzaVegetariana .pizzaVegetariana,
+    .opcion__lasañaClasica .lasañaClasica,
+    .opcion__lasañaVegetariana .lasañaVegetariana,
+    .opcion__lasañaPolloAlfredo .lasañaPolloAlfredo,
+    .opcion__lasañaEspinacasChampinones .lasañaEspinacasChampinones,
+    .opcion__pastaCarbonara .pastaCarbonara,
+    .opcion__pastaFettuccineAlfredo .pastaFettuccineAlfredo,
+    .opcion__Arrabiata .pastaArrabiata,
+    .opcion__pastaLinguinePesto .pastaLinguinePesto {
+        width: 250px;
     }
 }
